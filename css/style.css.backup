@@ -4,7 +4,7 @@ html {
 }
 body {
 	background-color: #fff5cc;
-	font-family: Garamond, serif;
+	font-family: Georgia, serif;
 	font-size: 18px;
 	padding: 0px;
 	margin: 0px;
@@ -19,8 +19,42 @@ a:hover {
 
 /* header */
 header {
-	padding: 10px;
+	padding: 0px 0px 0px 0px;
 	margin-bottom: 20px;
+	background-color: rgb(10, 10, 10);
+}
+header table {
+	border-collapse: collapse;
+	padding: 0px;
+}
+header td {
+	padding: 0px 10px 0px 10px;
+}
+header td a, header .menu a {
+	color: #ffffe0;
+	text-decoration: none;
+}
+header td a:hover {
+	text-decoration: underline;
+}
+header img {
+	display: block;
+	height: 40px;
+}
+header .menu {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+header .menu .line {
+	height: 3px;
+	background-color: #fff5cc;
+	width: 27px;
+}
+header .menu .void {
+	height: 5px;
+	background-color: rgb(10, 10, 10);
+	width: 27px;
 }
 
 /* content */
@@ -92,6 +126,9 @@ footer {
 	.main-content {
 		max-width: 100%;
 		padding: 0px 10px 0px 10px;
+	}
+	header table .item {
+		display: none;
 	}
 }
 @media screen and (max-width: 400px) {
